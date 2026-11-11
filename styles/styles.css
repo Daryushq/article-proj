@@ -38,6 +38,7 @@ img {
 }
 
 .article__head {
+    max-width: 90rem;
 	margin: 2rem 0;
 	font-size: 4rem;
 	line-height: 150%;

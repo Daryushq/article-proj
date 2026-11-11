@@ -164,7 +164,8 @@ details {
 	padding: 3rem 2.5rem;
 }
 
-summary::-webkit-details-marker {
+summary::-webkit-details-marker,
+summary::marker {
     display: none;
 }
 

@@ -171,6 +171,7 @@ summary {
 	font-weight: 600;
 	font-size: 2.2rem;
 	line-height: 150%;
+    list-style: none;
 	color: #191919;
 	cursor: pointer;
 }
@@ -227,6 +228,12 @@ details[open] summary::after {
 @media (max-width: 600px) {
 	.article__title {
 		margin: 1.5rem 0;
+	}
+}
+
+@media (max-width: 430px) {
+    .article__head {
+		line-height: 120%;
 	}
 }
 

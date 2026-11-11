@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('../styles/reset.css');
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #f7f7f7;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1230px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	background-color: #ffffff;
+}
+
+.wrapper {
+	padding: 2rem 2rem 0;
+}
+
+.article {
+	margin-top: 5rem;
+	padding-bottom: 4rem;
+}
+.article__meta {
+	font-size: 1.7rem;
+	line-height: 150%;
+	opacity: 0.8;
+}
+
+.article__head {
+	margin: 2rem 0;
+	font-size: 4rem;
+	line-height: 150%;
+}
+
+.article__author {
+	width: 29.9rem;
+	height: 40.1rem;
+	object-fit: cover;
+}
+
+.article__desc {
+	margin-top: 4rem;
+	font-size: 2.2rem;
+	line-height: 120%;
+	color: #444444;
+}
+
+.article__quote {
+	margin: 3rem 0;
+	font-size: 2.3rem;
+	line-height: 150%;
+	color: #444444;
+}
+
+.quote__author {
+	display: block;
+	margin-top: 1rem;
+	font-size: 2rem;
+	font-style: italic;
+	color: #191919;
+}
+
+.article__list {
+	margin-left: 2.3rem;
+}
+.article__list li,
+a {
+	font-size: 2.3rem;
+	color: #444444;
+}
+
+.article__title {
+	margin: 3.5rem 0;
+	font-size: 2.7rem;
+	line-height: 150%;
+	color: #282828;
+}
+.article__text {
+	max-width: 90rem;
+	margin: 2rem 0;
+	font-size: 2.3rem;
+	line-height: 150%;
+	color: #444444;
+}
+
+.article__wrapper {
+	margin-left: 2.2rem;
+}
+
+.article__wrapper li,
+a {
+	font-size: 2.3rem;
+	line-height: 150%;
+	color: #444444;
+}
+
+.article__column-head {
+	font-size: 2.3rem;
+	line-height: 150%;
+	color: #444444;
+}
+
+.article__column .article__text {
+	margin-top: 0;
+}
+.article__btn {
+	display: inline-block;
+	margin: 1rem 0;
+	padding: 1.5rem 2.5rem;
+	color: #191919;
+	border: 2px solid #191919;
+	background-color: transparent;
+	border-radius: 3rem;
+	transition: 0.1s;
+}
+
+.article__btn:hover {
+	color: #ffffff;
+	background-color: #1c1c1c;
+	border: 1px solid #1c1c1c;
+}
+
+.faq-container {
+	max-width: 72rem;
+}
+
+.faq-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: #111;
+}
+
+.faq-item {
+	background: #ffffff;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.8rem;
+	margin-bottom: 2rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+	transition: border-color 0.2s;
+}
+
+.faq-item:hover {
+	border-color: #d1d5db;
+}
+
+details {
+	padding: 3rem 2.5rem;
+}
+
+summary {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 600;
+	font-size: 2.2rem;
+	line-height: 150%;
+	color: #191919;
+	cursor: pointer;
+}
+
+summary::after {
+	content: '';
+	width: 1rem;
+	height: 1rem;
+	border-right: 2px solid #1c1c1c;
+	border-bottom: 2px solid #1c1c1c;
+	transform: rotate(45deg);
+	transition: transform 0.3s ease;
+	margin-left: 1rem;
+	flex-shrink: 0;
+}
+
+details[open] summary::after {
+	transform: rotate(-135deg);
+}
+
+.faq-answer {
+	margin-top: 1.5rem;
+	padding-top: 1rem;
+	font-size: 2rem;
+	color: #444444;
+	line-height: 150%;
+	border-top: 1px solid #f3f4f6;
+}
+
+.author__link {
+	text-decoration: underline;
+	font-style: italic;
+}
+
+@media (max-width: 768px) {
+	.article__desc {
+		font-size: 2rem;
+	}
+	.article__list li,
+	a {
+		font-size: 2rem;
+	}
+	.article__quote {
+		font-size: 2rem;
+	}
+	.article__text {
+		font-size: 2rem;
+	}
+	.article__column-head {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.article__title {
+		margin: 1.5rem 0;
+	}
+}
+
+@media (max-width: 389px) {
+	.article__head {
+		font-size: 3rem;
+	}
+	.article__desc {
+		font-size: 1.7rem;
+	}
+	.article__list li,
+	a {
+		font-size: 1.8rem;
+	}
+	.article__quote {
+		font-size: 1.8rem;
+	}
+	.article__title {
+		font-size: 2rem;
+	}
+	.article__column-head {
+		font-size: 2rem;
+	}
+	.article__text {
+		font-size: 1.8rem;
+	}
+	.article__btn {
+		padding: 1.3rem 2rem;
+		font-size: 1.8rem;
+	}
+}
+
+@media (max-width: 390px) {
+	.article__title {
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 370px) {
+	.article {
+		margin-top: 2rem;
+	}
+	.article__head {
+		margin: 1.5rem 0;
+	}
+	.article__column-head {
+		font-size: 2.7rem;
+	}
+	.article__desc {
+		font-size: 1.8rem;
+	}
+}
+
+@media (max-width: 354) {
+	.article__btn {
+		padding: 1rem 1.5rem;
+		font-size: 1.4rem;
+	}
+}
